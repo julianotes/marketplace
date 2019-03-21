@@ -1,0 +1,155 @@
+%dark-link {
+    color: $dark-gray;
+    text-decoration: none;
+    transition: color .28s ease-in-out;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+%footer-column {
+    width: 270px;
+}
+
+.footer {
+    background: $dark;
+    color: $dark-gray;
+    margin-top: 100px;
+
+    &__topline {
+        height: 98px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__botline {
+        display: flex;
+        align-items: flex-start;
+        padding-top: 25px;
+        height: 101px;
+        border-top: 1px solid rgba(#fff, .1);
+        justify-content: space-between;
+    }
+
+    &__copy {
+        @extend %footer-column;
+        font-size: 14px;
+    }
+
+    &__nav {
+        height: 100%;
+        display: flex;
+        margin-left: auto;
+        margin-right: 97px;
+    }
+
+    &__nav-li {
+        height: 100%;
+
+        &+& {
+            margin-left: 30px;
+        }
+    }
+
+    &__nav-link {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: color .28s ease-in-out;
+        color: #fff;
+        letter-spacing: 1.12px;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    &__tel {
+        @extend %footer-column;
+        display: flex;
+        align-items: baseline;
+        font-size: 14px;
+    }
+
+    &__tel-icon {
+        fill: $dark-gray;
+        margin-right: 9px;
+    }
+
+    &__tel-right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__tel-number {
+        @extend %dark-link;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 6px;
+    }
+
+    &__status-chevron {
+        fill: $dark-gray;
+        transition: fill .28s ease-in-out;
+    }
+
+    &__status-icon {
+        margin-left: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 19px;
+        text-align: center;
+        width: 19px;
+        height: 19px;
+        border: 2px solid $dark-gray;
+        border-radius: 50%;
+        transition: border .28s ease-in-out;
+    }
+
+    &__status {
+        @extend %footer-column;
+        @extend %dark-link;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            color: #fff;
+
+            .footer__status-chevron {
+                fill: #fff;
+            }
+
+            .footer__status-icon {
+                border-color: #fff;
+            }
+        }
+    }
+
+    &__login-icon {
+        fill: $dark-gray;
+        margin-right: 12px;
+        transition: fill .28s ease-in-out;
+    }
+
+    &__login {
+        @extend %dark-link;
+        @extend %footer-column;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+
+        &:hover {
+            .footer__login-icon {
+                fill: #fff;
+            }
+        }
+    }
+}

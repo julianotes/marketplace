@@ -1,0 +1,32 @@
+.value-slider {
+    height: 3px;
+    width: 100%;
+    position: relative;
+    background: $dark-gray;
+    margin: 12px 0;
+    &__range {
+        position:absolute;
+        height: 3px;
+        background: $accent;
+        top:50%;
+        transform: translateY(-50%);
+    }
+
+    &__handle {
+        position:absolute;
+        border-width: 1px;
+        border-style: solid;
+        border: 1px solid $light-gray;
+        background: #fff;
+        cursor: pointer;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        top:50%;
+        transform: translateY(-50%);
+        transition: background .2s ease-in-out;
+        &:hover{
+            background: darken(#fff, 3%);
+        }
+    }
+}

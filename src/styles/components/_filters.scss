@@ -1,0 +1,37 @@
+.filter {
+    background: #fff;
+    border-radius: 5px;
+    padding: 25px 33px 10px;
+    margin-bottom: 25px;
+    display: flex;
+
+    &__right {
+        margin-left: auto;
+        display: flex;
+    }
+
+    &__values {
+        display: flex;
+    }
+
+    &__values-text {
+        margin-right: 22px;
+        padding-top: 11px;
+    }
+
+    &__values-divider {
+        height: 1px;
+        width: 14px;
+        background: $second;
+        display: inline-block;
+        margin: 0 10px;
+        position: relative;
+        top: -2px;
+    }
+    &__sort {
+        font-size: 16px;
+        &+&{
+            margin-left: 55px;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.button {
+    background: transparent;
+    border: 2px solid $dark-gray;
+    color: $second;
+    border-radius: 3px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 16px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    transition: all .28s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        color: $accent;
+        border-color: $accent;
+    }
+
+    &:focus {
+        color: darken($accent, 10%);
+        border-color: darken($accent, 10%);
+        outline: none;
+    }
+}

@@ -1,0 +1,23 @@
+.select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='6'%3E%3Cpath fill-rule='evenodd' fill='%23A1A8BD' d='M9.701 1.829L5.866 5.664a1.067 1.067 0 0 1-.867.299 1.066 1.066 0 0 1-.866-.299L.298 1.829A1.084 1.084 0 1 1 1.832.295l3.167 3.167L8.167.295a1.084 1.084 0 1 1 1.534 1.534z'/%3E%3C/svg%3E");
+    background-position: calc(100% - 5px) center;
+    background-repeat: no-repeat;
+    appearance: none;
+    border:none;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 8px;
+    padding-right: 21px;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: bold;
+    cursor: pointer;
+    &::-ms-expand {
+        display: none;
+    }
+    &:focus {
+        color: darken($second, 5%);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='6'%3E%3Cpath fill-rule='evenodd' fill='%23A1A8BD' d='M9.7 4.17L5.87.34A1.07 1.07 0 0 0 5 .04a1.07 1.07 0 0 0-.87.3L.3 4.17a1.08 1.08 0 1 0 1.53 1.54L5 2.54l3.17 3.17A1.08 1.08 0 1 0 9.7 4.17z'/%3E%3C/svg%3E");
+    }
+}
